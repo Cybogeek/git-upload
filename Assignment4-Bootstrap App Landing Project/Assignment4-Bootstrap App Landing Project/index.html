@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .jumbotron {
+        background-image: linear-gradient(to right, #007bff88, #00d5ff80),
+          url("img/blue_bg.jpg");
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s;
+      }
+      .navbar-toggler {
+        border: none;
+      }
+      #download {
+        background-image: linear-gradient(to right, #007bff88, #00d5ff80),
+          url("img/blue_bg.jpg");
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+      #about {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        padding-top: 56px; /* To prevent content hiding behind fixed navbar */
+      }
+    </style>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">AppBrand</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download">Download</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron mt-5">
+      <h1>Welcome to Our App</h1>
+      <p>Experience the best features with seamless functionality.</p>
+      <button class="btn btn-primary btn-md">Download Now</button>
+    </div>
+
+    <div class="container text-center mt-5" id="features">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img class="img rounded" src="img/card.jpg" alt="Feature 1" />
+            <h4>Feature 1</h4>
+            <p>Detailed description of feature 1.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img class="img rounded" src="img/card.jpg" alt="Feature 2" />
+            <h4>Feature 2</h4>
+            <p>Detailed description of feature 2.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-3">
+            <img class="img rounded" src="img/card.jpg" alt="Feature 3" />
+            <h4>Feature 3</h4>
+            <p>Detailed description of feature 3.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="mb-4">About Our App</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+              dui mauris.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              lacinia odio vitae vestibulum vestibulum. Cras porttitor metus
+              sapien, vitae volutpat quam ultrices at. Donec lobortis ipsum nec
+              diam tristique, sit amet faucibus purus aliquet.
+            </p>
+            <p>
+              Phasellus nec sem in justo pellentesque facilisis. Etiam imperdiet
+              imperdiet orci. Nunc nec neque. Phasellus leo dolor, tempus non,
+              auctor et, hendrerit quis, nisi. Curabitur ligula sapien,
+              tincidunt non, euismod vitae, posuere imperdiet, leo.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="img/card.jpg"
+              alt="About Our App"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-12">
+            <h3>Our Mission</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+            <h3 class="mt-4">Our Vision</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui
+              quibusdam, recusandae sit vero unde, sed, incidunt et ea quo
+              dolore laudantium consectetur!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container-fluid text-center mt-5" id="download">
+      <h1>Download Our App</h1>
+      <p>Experience the best features with seamless functionality.</p>
+      <a href="#"
+        ><img
+          class="img rounded"
+          src="img/appstore.jpg"
+          alt="download"
+          width="150"
+      /></a>
+    </div>
+
+    <footer class="bg-dark text-white p-3" id="contact">
+      <div class="conatiner w-50 mx-auto">
+        <h1 class="text-center">Contact US</h1>
+        <form method="post" action="#">
+          <div class="mb-2">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="message" class="form-label">Message</label>
+            <input type="text" class="form-control" id="message" />
+          </div>
+          <div class="mb-2 form-check">
+            <input type="checkbox" class="form-check-input" id="agree" />
+            <label class="form-check-label" for="agree"
+              >Accept all Terms & Conditions.</label
+            >
+          </div>
+          <div class="mx-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="text-center mt-3">
+        <a href="#" class="text-white me-3">&copy; 2025 AppBrand.</a>
+        All rights reserved.
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        $(".card").hover(
+          function () {
+            $(this).css("box-shadow", "5px 5px 15px rgba(0, 0, 0, 0.2)");
+          },
+          function () {
+            $(this).css("box-shadow", "none");
+          }
+        );
+        $("button").click(function (e) {
+          e.preventDefault();
+          alert("Download started.");
+        });
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
